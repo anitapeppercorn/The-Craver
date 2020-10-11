@@ -1,0 +1,137 @@
+* {
+    padding: 0.001vw;
+    margin: 0.001vw;
+}
+
+html, body, .row, .container-fluid {
+    height: 100%;
+
+}
+
+.box-all {
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.hero-image {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url(../images/hero.jpg);
+    flex: 1 1 auto;
+
+}
+
+.inputcard {
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.onimage {
+    border-radius: 20px;
+
+}
+
+.jumbotron {
+    line-height: 2.0;
+    background-color: rgb(213, 220, 237);
+    border: 0.1vw solid lightgrey;
+    margin-top: 2.0vw;
+    padding-top: 2.0vw;
+    color: #074779;
+}
+
+.city {
+    font-size: 3vw;
+    font-weight: 500;
+}
+
+#search-bar {
+    background-color: #babec2;
+    height: 100%;
+}
+
+.card-deck .card {
+    background-color: #587da5;
+    color: white;
+    padding: 1vw;
+}
+
+.favorable {
+    background-color: #28A745;
+    color: white;
+    padding: 0.8vw;
+}
+
+.moderate {
+    background-color: #FFC108;
+    color: white;
+    padding: 0.8vw;
+}
+
+.severe {
+    background-color: #DC3545;
+    color: white;
+    padding: 0.8vw;
+}
+
+.cityButtons {
+    background-color: white;
+    border: 0.1vw solid rgb(179, 175, 175);
+    text-align: left;
+    color: #32637a;
+    padding: 1vw;
+
+}
+
+#search-history {
+    display: flex;
+}
+
+#city-input {
+    position: relative;
+    left: 1vw;
+}
+
+.caption-border {
+    display: block;
+    border: solid white;
+    border-width: 5px 0 5px 5px;
+    padding: 20px;
+    width: 150%;
+    border-radius: 1em;
+    clip-path: polygon(0 0, 85% 0, 65% 100%, 0 100%);
+}
+
+.h1-text {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (max-width: 980px) {
+    .caption-border {
+        clip-path: polygon(0 0, 100% 0, 75% 100%, 0 100%);
+    }
+
+    .h1-text {
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .caption-border {
+        clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    }
+
+    .h1-text {
+        font-size: 20px;
+    }
+}
